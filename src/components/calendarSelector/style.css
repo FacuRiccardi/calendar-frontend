@@ -1,0 +1,38 @@
+.MuiDateCalendar-root {
+  background-color: #18181B;
+  font-weight: 400;
+}
+
+
+
+.MuiPickersCalendarHeader-switchViewIcon,
+.MuiPickersArrowSwitcher-button,
+.MuiPickersDay-root,
+.MuiPickersCalendarHeader-root,
+.MuiPickersYear-yearButton
+{
+  color: white !important;
+}
+
+.MuiPickersDay-dayOutsideMonth,
+.MuiDayCalendar-weekDayLabel
+{
+  color: gray !important;
+}
+
+.MuiDayCalendar-weekDayLabel,
+.MuiPickersDay-root,
+.MuiPickersYear-yearButton
+{
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.MuiPickersCalendarHeader-label {
+  font-weight: 600 !important;
+  font-size: 22px !important;
+}
+
+.MuiPickersDay-today {
+  border-color: #1976d2 !important;
+}
