@@ -9,14 +9,12 @@ const userReducer = (state, action) => {
 
   switch(type) {
     case "SET_TOKEN_AND_USER":
-      console.log("SAVE_TOKEN_AND_USER", payload)
       return {
         ...state,
         user: payload.user,
         token: payload.token
       }
     case "SET_ERRORS":
-      console.log("SET_ERRORS", payload)
       return {
         ...state,
         errors: payload.errors

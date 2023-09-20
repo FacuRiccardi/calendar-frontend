@@ -8,13 +8,13 @@ function NavBar({ addClick = () => {}, settingsClick = () => {}, logoutClick  = 
   return (
     <NavBarContainer>
       <ButtonsContainer>
-        <Button variant='contained' size="small" color="gray" onClick={addClick}>
+        <Button variant="contained" size="small" color="gray" onClick={addClick}>
           <AddIcon color="white"/>
         </Button>
-        <Button variant='contained' size="small" color="gray" onClick={settingsClick}>
+        <Button variant="contained" size="small" color="gray" onClick={settingsClick}>
           <SettingsIcon color="white"/>
         </Button>
-        <Button variant='contained' size="small" color="gray" onClick={logoutClick}>
+        <Button variant="contained" size="small" color="gray" onClick={logoutClick}>
           <LogoutIcon color="white"/>
         </Button>
       </ButtonsContainer>

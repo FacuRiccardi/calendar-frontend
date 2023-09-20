@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-import useUser from "../../stores/user/userContext"
+import useUser from "../../stores/user/UserContext"
 import SignIn from "../signIn"
 import Calendar from "../calendar"
 

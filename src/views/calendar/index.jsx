@@ -1,18 +1,24 @@
 import styled from "@emotion/styled"
 
-import NextEvents from '../nextEvents'
-import CalendarSelector from '../calendarSelector'
+import { DateProvider } from "../../stores/date/DateContext"
+import NextEvents from "../nextEvents"
+import CalendarSelector from "../calendarSelector"
+import WeekEvents from "../weekEvents"
 
 function Calendar() {
   return (
     <CalendarContainer>
-      <CalendarSection>
-        <CalendarSelector />
-      </CalendarSection>
-      <NextEventsSection>
-        <NextEvents />
-      </NextEventsSection>
-      <WeekSection></WeekSection>
+      <DateProvider>
+        <CalendarSection>
+          <CalendarSelector />
+        </CalendarSection>
+        <NextEventsSection>
+          <NextEvents />
+        </NextEventsSection>
+        <WeekSection>
+          <WeekEvents />
+        </WeekSection>
+      </DateProvider>
     </CalendarContainer>
   )
 }
@@ -38,7 +44,8 @@ const NextEventsSection = styled.div`
 
 const WeekSection = styled.div`
   grid-area: 1 / 2 / 6 / 6;
-  background-color: lime;
+  background: white;
+  padding: 16px 0 16px 16px;
 `
 
 export default Calendar

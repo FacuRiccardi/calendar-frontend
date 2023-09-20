@@ -2,11 +2,7 @@ import { createContext, useReducer, useContext } from "react";
 
 import shopReducer, { initialState } from "./userReducer"
 
-const UserContext = createContext({
-  token: "",
-  user: {},
-  errors: {}
-})
+const UserContext = createContext(initialState)
 
 export const UserProvider = ({ children }) => {
   const [state, dispatch] = useReducer(shopReducer, initialState)

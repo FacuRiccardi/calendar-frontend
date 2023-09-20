@@ -1,17 +1,20 @@
-import { useState } from 'react'
+import { useState } from "react"
 import styled from "@emotion/styled"
 
-import DateCalendar from '../../components/calendarSelector'
-import NavBar from '../../components/navBar'
+import useDate from "../../stores/date/DateContext"
+import DateCalendar from "../../components/CalendarSelector"
+import NavBar from "../../components/navBar"
 import CreateEvent from "../createEvent"
 
 function CalendarSelector() {
+  const { selectDate, setSelectedDate } = useDate()
+
   const [createEventModal, setCreateEventModal] = useState(false)
 
   return (
     <SelectorContainer>
      <NavBar addClick={() => {setCreateEventModal(true)}}/>
-     <DateCalendar />
+     <DateCalendar value={selectDate} onChange={setSelectedDate} />
      <CreateEvent open={createEventModal} closeModal={() => {setCreateEventModal(false)}}/>
     </SelectorContainer>
   )

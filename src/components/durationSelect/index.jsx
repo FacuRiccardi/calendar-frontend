@@ -12,7 +12,7 @@ function DurationSelect({ value, onChange, label, list }) {
         <Select
           value={value}
           label={label}
-          onChange={onChange}
+          onChange={(event) => { onChange(event.target.value) }}
         >
           {
             list.map((item, i) => (<MenuItem key={i} value={item}>{item}</MenuItem>))

@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 function DayEventsDisplay({ children, dayName, dayValue }) {
   return (
     <DayEventsContainer>
-      <Header style={{ color: dayName === "TODAY" ? '#3B82F6' : 'rgba(255, 255, 255, 0.7)' }}>
+      <Header style={{ color: dayName === "TODAY" ? "#3B82F6" : "rgba(255, 255, 255, 0.7)" }}>
         <DayName>{dayName}</DayName>
         <DayValue>{dayValue}</DayValue>
       </Header>
