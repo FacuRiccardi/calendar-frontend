@@ -19,7 +19,7 @@ How to use the app:
 
 Things to have in mind:
 
-- Because of the time, I didnt create the app to ve responsive, so its possible that it will be broken in other monitors. My monitor has a resolution of 1920x1080, please use a similar resolution to see the app.
+- Because of the time, I didnt create the app to be responsive, so its possible that it will be broken in other monitors. My monitor has a resolution of 1920x1080, please use a similar resolution to see the app.
 - I didn't get to the solution to display overlaped events in a proper way, so if you create 2 or more events in the same time, they will overlap.
 - I used Material UI components to develop the App faster, but it comes with the disadvantage that some styles are not going to match with the Figma, sry for that.
 - I didn't implement the Logout button, or the configuration button, so they will do nothing when you click them.
